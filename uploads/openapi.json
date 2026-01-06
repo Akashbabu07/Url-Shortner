@@ -159,7 +159,7 @@
     },
     "/api/KGctsEu_p": {
       "get": {
-        "summary": "http://localhost:5000/api/KGctsEu_p",
+        "summary": "http://localhost:5000/api/{shorten}",
         "description": "",
         "operationId": "getapiKGctsEu_p",
         "parameters": [

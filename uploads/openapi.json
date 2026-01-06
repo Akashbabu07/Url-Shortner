@@ -38,9 +38,9 @@
               "schema": {
                 "type": "object",
                 "example": {
-                  "name": "Akash",
-                  "email": "akash@test.com",
-                  "password": "123456"
+                  "name": "Someone",
+                  "email": "user@example.com",
+  "password": "your_password"
                 }
               }
             }
@@ -60,7 +60,7 @@
             "schema": {
               "type": "string"
             },
-            "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+"example": "Bearer <JWT_TOKEN>"
           }
         ],
         "responses": {
@@ -117,9 +117,10 @@
               "schema": {
                 "type": "object",
                 "example": {
-                  "email": "akash@test.com",
-                  "password": "123456"
-                }
+  "email": "user@example.com",
+  "password": "your_password"
+}
+
               }
             }
           }
@@ -138,7 +139,7 @@
             "schema": {
               "type": "string"
             },
-            "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+"example": "Bearer <JWT_TOKEN>"
           }
         ],
         "responses": {
@@ -168,7 +169,7 @@
             "schema": {
               "type": "string"
             },
-            "example": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+"example": "Bearer <JWT_TOKEN>"
           }
         ],
         "responses": {

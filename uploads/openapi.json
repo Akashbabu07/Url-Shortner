@@ -1,0 +1,204 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "https://postman-echo.com"
+    }
+  ],
+  "paths": {
+    "/api/register": {
+      "post": {
+        "summary": "http://localhost:5000/api/register",
+        "description": "",
+        "operationId": "postapiregister",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {}
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "name": "Akash",
+                  "email": "akash@test.com",
+                  "password": "123456"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/shorten": {
+      "post": {
+        "summary": "http://localhost:5000/api/shorten",
+        "description": "",
+        "operationId": "postapishorten",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {}
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "originalUrl": "https://google.com"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/login": {
+      "post": {
+        "summary": "http://localhost:5000/api/login",
+        "description": "",
+        "operationId": "postapilogin",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {}
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "akash@test.com",
+                  "password": "123456"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/my-urls": {
+      "get": {
+        "summary": "http://localhost:5000/api/my-urls",
+        "description": "",
+        "operationId": "getapimyurls",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/KGctsEu_p": {
+      "get": {
+        "summary": "http://localhost:5000/api/KGctsEu_p",
+        "description": "",
+        "operationId": "getapiKGctsEu_p",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWI5NzE5ZDBkZGJjYTYyNDhhYTA1OSIsImlhdCI6MTc2NzYxMDM4NiwiZXhwIjoxNzY3Njk2Nzg2fQ.vGRQ8-klawSq8exd2_mlhjLQnEezwmJmZm_aMQXUyOI"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      },
+      "digestAuth": {
+        "type": "http",
+        "scheme": "digest"
+      }
+    }
+  },
+  "tags": []
+}
